@@ -8,6 +8,9 @@
 //Depending on the value of the input, we change the time the output is on.(PWM)
 // The output is binary digital (0 or 1) and the time it remains HIGH is proportional to the analog input value.
 
+//IF we need a motor to run with Arduino, we need to attach a motor driver which can increase(amplify) the current from the arduino
+// as a motor requires a much higher current than what is being supplied by the arduino.
+
 const int potIn = 14; //potIn is given a value of 14 which takes up some memory space.
 #define motorOut 13 //where motor is a Macro which gets the Macro_value 13, during compile time and hence does not take up memory space.
 
